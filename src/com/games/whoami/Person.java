@@ -1,4 +1,4 @@
-package com.games.whoAmI;
+package com.games.whoami;
 
 public class Person {
     private String name;
@@ -22,7 +22,7 @@ public class Person {
     public String getName() {
         return name;
     }
-    public boolean isHair() {
+    public boolean hasHair() {
         return hair;
     }
 
@@ -30,22 +30,22 @@ public class Person {
         return hairLength;
     }
 
-    public boolean isGlasses() {
+    public boolean hasGlasses() {
         return glasses;
     }
 
-    public boolean isCover() {
+    public boolean hasCover() {
         return cover;
     }
 
-    public boolean isBeard() {
+    public boolean hasBeard() {
         return beard;
     }
     @Override
     public String toString() {
         return getClass().getSimpleName() + ": name=" + getName()
-                + ", hair=" + isHair() + ", hairLength=" + getHairLength()
-                + ", glasses=" + isGlasses() + ", hat=" + isCover() +
-                ", beard=" + isBeard();
+                + ", hair=" + hasHair() + ", hairLength=" + getHairLength()
+                + ", glasses=" + hasGlasses() + ", hat=" + hasCover() +
+                ", beard=" + hasBeard();
     }
 }
