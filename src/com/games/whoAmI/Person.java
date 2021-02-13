@@ -5,18 +5,18 @@ public class Person {
     private boolean hair;
     private HairLength hairLength;
     private boolean glasses;
-    private boolean hat;
+    private boolean cover;
     private boolean beard;
 
     public Person(String name) {
         this.name = name;
     }
-    public Person(String name, boolean hair, HairLength hairLength, boolean glasses, boolean hat, boolean beard) {
+    public Person(String name, boolean hair, HairLength hairLength, boolean glasses, boolean cover, boolean beard) {
         this(name);
         this.hair = hair;
         this.hairLength = hairLength;
         this.glasses = glasses;
-        this.hat = hat;
+        this.cover = cover;
         this.beard = beard;
     }
     public String getName() {
@@ -34,8 +34,8 @@ public class Person {
         return glasses;
     }
 
-    public boolean isHat() {
-        return hat;
+    public boolean isCover() {
+        return cover;
     }
 
     public boolean isBeard() {
@@ -45,7 +45,7 @@ public class Person {
     public String toString() {
         return getClass().getSimpleName() + ": name=" + getName()
                 + ", hair=" + isHair() + ", hairLength=" + getHairLength()
-                + ", glasses=" + isGlasses() + ", hat=" + isHat() +
+                + ", glasses=" + isGlasses() + ", hat=" + isCover() +
                 ", beard=" + isBeard();
     }
 }

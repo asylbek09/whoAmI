@@ -1,5 +1,5 @@
 package com.games.whoAmI;
 
 public enum HairLength {
-    SHORT, MEDIUM, LONG
+    BOLD, SHORT, MEDIUM, LONG
 }
