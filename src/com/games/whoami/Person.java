@@ -11,6 +11,7 @@ public class Person {
     public Person(String name) {
         this.name = name;
     }
+
     public Person(String name, boolean hair, HairLength hairLength, boolean glasses, boolean cover, boolean beard) {
         this(name);
         this.hair = hair;
@@ -19,9 +20,11 @@ public class Person {
         this.cover = cover;
         this.beard = beard;
     }
+
     public String getName() {
         return name;
     }
+
     public boolean hasHair() {
         return hair;
     }
@@ -41,6 +44,7 @@ public class Person {
     public boolean hasBeard() {
         return beard;
     }
+
     @Override
     public String toString() {
         return getClass().getSimpleName() + ": name=" + getName()
