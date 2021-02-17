@@ -3,12 +3,12 @@ package com.games.whoami;
 import java.util.Collection;
 
 public interface Character {
-    public Collection<Person> filterByName(String name);
-    public Collection<Person> filterByHair(boolean hair);
-    public Collection<Person> filterByHairLength(HairLength hairLength);
-    public Collection<Person> filterByGlasses(boolean glasses);
-    public Collection<Person> filterByCover(boolean cover);
-    public Collection<Person> filterByBeard(boolean beard);
-    public int size();
-    public Collection<Person> getAll();
+    Collection<Person> filterByName(String name);
+    Collection<Person> filterByHair(boolean hair);
+    Collection<Person> filterByHairLength(HairLength hairLength);
+    Collection<Person> filterByGlasses(boolean glasses);
+    Collection<Person> filterByCover(boolean cover);
+    Collection<Person> filterByBeard(boolean beard);
+    int size();
+    Collection<Person> getAll();
 }
