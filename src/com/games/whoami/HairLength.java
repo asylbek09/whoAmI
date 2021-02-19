@@ -1,5 +1,8 @@
+/*
+  Enum to hold 4 distinct hair lengths
+ */
 package com.games.whoami;
 
 public enum HairLength {
-    BOLD, SHORT, MEDIUM, LONG
+    SHORT, MEDIUM, LONG, BALD
 }
